@@ -12,6 +12,7 @@ public class Patterns {
         System.out.println("Chose a pattern to print.");
         System.out.println("1.Rectangular star pattern.");
         System.out.println("2.Right-Angled Triangle Pattern");
+        System.out.println("3.Right-Angled Number Pyramid");
         int num = sc.nextInt();
 
         switch(num) {
@@ -29,6 +30,16 @@ public class Patterns {
                     for(int j=0 ; j < i ; j++){
 
                         System.out.print("* ");
+                    }
+
+                System.out.println();
+            }
+            case 3 :
+            System.out.println("Right-Angled Number Pyramid");
+                for(int i = 0 ; i<5 ; i++){
+                    for(int j=0 ; j < i ; j++){
+
+                        System.out.print(j+1);
                     }
 
                 System.out.println();
