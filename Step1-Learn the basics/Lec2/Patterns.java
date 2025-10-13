@@ -36,7 +36,10 @@ public class Patterns {
             }
             case 3 :
             System.out.println("Right-Angled Number Pyramid");
-                for(int i = 0 ; i<5 ; i++){
+            Scanner th = new Scanner(System.in);
+            System.out.println("Height of the pyramid: ");
+            int n = th.nextInt();
+                for(int i = 0 ; i<n ; i++){
                     for(int j=0 ; j < i ; j++){
 
                         System.out.print(j+1);
