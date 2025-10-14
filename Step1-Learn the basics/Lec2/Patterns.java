@@ -13,6 +13,7 @@ public class Patterns {
         System.out.println("1.Rectangular star pattern.");
         System.out.println("2.Right-Angled Triangle Pattern");
         System.out.println("3.Right-Angled Number Pyramid");
+        System.out.println("4.Right-Angled Number Pyramid - II");
         int num = sc.nextInt();
 
         switch(num) {
@@ -35,10 +36,12 @@ public class Patterns {
                 System.out.println();
             }
             case 3 :
-            System.out.println("Right-Angled Number Pyramid");
             Scanner th = new Scanner(System.in);
             System.out.println("Height of the pyramid: ");
             int n = th.nextInt();
+            System.out.println("Right-Angled Number Pyramid");
+
+            
                 for(int i = 0 ; i<n ; i++){
                     for(int j=0 ; j < i ; j++){
 
@@ -47,6 +50,20 @@ public class Patterns {
 
                 System.out.println();
             }
+            case 4:
+            
+            Scanner t = new Scanner(System.in);
+            System.out.println("Height of the pyramid: ");
+            n = t.nextInt();
+            System.out.println("Right-Angled Number Pyramid - II");
+            
+                for(int i=0 ; i<=n;i++){
+                    for( int j =0 ; j<i ; j++){
+                        System.out.print(i);
+                    }
+                    System.out.println();
+                }
+
         }
 
         
