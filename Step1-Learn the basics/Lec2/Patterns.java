@@ -14,6 +14,7 @@ public class Patterns {
         System.out.println("2.Right-Angled Triangle Pattern");
         System.out.println("3.Right-Angled Number Pyramid");
         System.out.println("4.Right-Angled Number Pyramid - II");
+        System.out.println("5.Inverted Right Pyramid");
         int num = sc.nextInt();
 
         switch(num) {
@@ -60,6 +61,19 @@ public class Patterns {
                 for(int i=0 ; i<=n;i++){
                     for( int j =0 ; j<i ; j++){
                         System.out.print(i);
+                    }
+                    System.out.println();
+                }
+
+            case 5: 
+            Scanner a = new Scanner(System.in);
+            System.out.println("Height of the inverted pyramid: ");
+            n = a.nextInt();
+            System.out.println("Inverted Right Pyramid");
+
+                for(int i = n ; i>0 ; i--) {
+                    for(int j=0  ; j<i ;j++){
+                        System.out.print("*");
                     }
                     System.out.println();
                 }
