@@ -16,6 +16,7 @@ public class Patterns {
         System.out.println("4.Right-Angled Number Pyramid - II");
         System.out.println("5.Inverted Right Pyramid");
         System.out.println("6.Inverted Numbered Right Pyramid");
+        System.out.println("7.Star Pyramid");
         int num = sc.nextInt();
 
         switch(num) {
@@ -92,6 +93,22 @@ public class Patterns {
                     System.out.println();
                 }
 
+            case 7:
+            Scanner c = new Scanner(System.in);
+            System.out.println("Hesight of the Star Pyramid");
+            n = c.nextInt();
+            System.out.println("Star Pyramid");
+                
+                for(int i=0 ; i<=n ; i++) {
+                    for(int j=0 ; j < (n-i); j++) {
+                        System.out.print(" ");
+
+                        
+                        }for( int k = 0 ; k <((2*i)-1) ; k++ ){
+                            System.out.print("*");
+                    }
+                    System.out.println();
+                }
         }
 
         
