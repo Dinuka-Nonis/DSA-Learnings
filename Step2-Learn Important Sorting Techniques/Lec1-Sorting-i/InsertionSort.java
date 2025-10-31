@@ -22,3 +22,23 @@ public class InsertionSort {
     }
     
 }
+
+
+/*
+ * Insertion Sort Algorithm (using swapping):
+ * ------------------------------------------
+ * This algorithm builds the sorted part of the array one element at a time.
+ * Starting from the second element, it repeatedly compares the current element
+ * with the previous elements and swaps them leftward until it reaches the correct position.
+ *
+ * Think of it like sorting playing cards in your hand:
+ * each new card (element) is inserted into its proper place among the already sorted cards.
+ *
+ * After each outer loop iteration, the left part of the array (from index 0 to i)
+ * becomes sorted.
+ *
+ * Time Complexity:
+ * - Best Case (already sorted): O(n)
+ * - Worst/Average Case: O(n²)
+ * - Space Complexity: O(1) (in-place sorting)
+ */
