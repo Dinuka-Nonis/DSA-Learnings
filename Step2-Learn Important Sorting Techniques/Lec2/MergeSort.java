@@ -1,3 +1,19 @@
+/*
+ * Merge Sort Algorithm:
+ * ---------------------
+ * Uses the Divide and Conquer approach.
+ * 1. Divide the array into two halves recursively until only one element remains.
+ * 2. Merge the sorted halves by comparing elements and placing them in order.
+ *
+ * Time Complexity: O(n log n)
+ * Space Complexity: O(n)  (extra space for temporary arrays)
+ *
+ * Example flow:
+ * [6, 3, 9, 5] → split → [6, 3] [9, 5]
+ * → merge each → [3, 6] [5, 9]
+ * → final merge → [3, 5, 6, 9]
+ */
+
 public class MergeSort {
     static void MergeSort(int[] arr, int low, int high ){
         if(low>=high) return;
