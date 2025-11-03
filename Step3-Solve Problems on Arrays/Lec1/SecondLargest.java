@@ -10,6 +10,13 @@ public class SecondLargest {
         } else {
             System.out.println("Second smallest element is: " + secondSmall);
         }
+         int secondLarge = secondlargest(arr, n);
+
+        if (secondLarge == Integer.MIN_VALUE) {
+            System.out.println("No distinct second largest element found.");
+        } else {
+            System.out.println("Second largest element is: " + secondLarge);
+        }
 
         
     }
@@ -31,6 +38,26 @@ public class SecondLargest {
             }
         }
         return secondsmallest;
+    }
+
+    static int secondlargest(int[] arr , int n){
+        if(n<2) {
+            System.out.println("Array need at least two elements to find second smallest");
+            return Integer.MIN_VALUE ;
+        }
+
+        int large = Integer.MIN_VALUE;
+        int secondlargest = Integer.MIN_VALUE;
+
+        for(int i = 0 ; i<n;i++){
+            if(arr[i]>large){
+                secondlargest = large;
+                large = arr[i];
+            }else if (arr[i] > secondlargest && arr[i] != large){
+                secondlargest = arr[i];
+            }
+        }
+        return secondlargest;
     }
     
 }
