@@ -1,3 +1,33 @@
+/*
+    Problem Statement:
+    ------------------
+    Write a Java program to find the second smallest and second largest 
+    distinct elements in an integer array.
+
+    Explanation:
+    -------------
+    - The program uses two separate functions:
+        1. secondsmallest() → Finds the second smallest distinct element.
+        2. secondlargest()  → Finds the second largest distinct element.
+
+    - Both functions use a single traversal (O(N) time complexity) with 
+      two variables each:
+        → For smallest:  'small' and 'secondsmallest'
+        → For largest:   'large' and 'secondlargest'
+
+    - Algorithm logic:
+        • For second smallest:
+            - If current element < small → update secondsmallest = small; small = element
+            - Else if element is smaller than secondsmallest and not equal to small → update secondsmallest
+        • For second largest:
+            - If current element > large → update secondlargest = large; large = element
+            - Else if element is larger than secondlargest and not equal to large → update secondlargest
+
+    - The program prints "No distinct second ..." messages if all elements
+      are equal or if the array has fewer than 2 elements.
+      */
+
+      
 public class SecondLargest {
     public static void main(String[] args) {
         int arr[] = {12,19,47,26,91,19,21};
