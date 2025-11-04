@@ -1,3 +1,9 @@
+// The method checks if the array is sorted in ascending order.
+// It starts from the second element (index 1) and compares each
+// element with its previous one. If any element is smaller than
+// the previous, the array is not sorted.
+
+
 public class SortedCheck {
 
     static boolean isSorted(int arr[], int n){
@@ -18,5 +24,6 @@ public class SortedCheck {
         int n2 = arr2.length;
 
         System.out.println(isSorted(arr, n));
+        System.out.println(isSorted(arr2, n));
     }
 }
