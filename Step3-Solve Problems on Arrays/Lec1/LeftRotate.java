@@ -1,3 +1,11 @@
+/*
+ * This program performs a single left rotation on an array.
+Each element shifts one position to the left, and the first element moves to the end.
+For example:
+Before rotation: [1, 2, 3, 4, 5]
+After rotation: [2, 3, 4, 5, 1]
+ */
+
 public class LeftRotate {
     static void rotate (int arr[] , int n){
         int temp = arr[0];
