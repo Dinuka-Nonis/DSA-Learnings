@@ -1,7 +1,7 @@
 public class RotateByK {
     static void rotate(int[] arr, int k, String side, int n) {
         if (side.equals("right")) {
-            for (int r = 0; r < k; r++) {
+            for (int r = 0; r <= k; r++) {
                 int temp = arr[n - 1];
                 for (int i = n - 1; i > 0; i--) {
                     arr[i] = arr[i - 1];
@@ -9,7 +9,7 @@ public class RotateByK {
                 arr[0] = temp;
             }
         } else if (side.equals("left")) {
-            for (int r = 0; r < k; r++) {
+            for (int r = 0; r <= k; r++) {
                 int temp = arr[0];
                 for (int i = 0; i < n - 1; i++) {
                     arr[i] = arr[i + 1];
