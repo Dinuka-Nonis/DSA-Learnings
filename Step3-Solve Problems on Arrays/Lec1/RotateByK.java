@@ -1,3 +1,8 @@
+    // This program rotates the elements of an integer array by 'k' positions either to the left or right.
+    // If 'side' is "right", elements are shifted towards the end, and the last elements wrap around to the front.
+    // If 'side' is "left", elements are shifted towards the start, and the first elements wrap around to the end.
+    // The rotation is done one step at a time, repeated 'k' times.
+    
 public class RotateByK {
     static void rotate(int[] arr, int k, String side, int n) {
         if (side.equals("right")) {
