@@ -20,4 +20,13 @@ public class ZeroToEnd {
         }
     
     }
+    public static void main(String[] args) {
+        int arr[] = {0,1,0,2,54,2,0};
+        int n = arr.length;
+        moveZeros(arr, n);
+        for (int i = 0 ; i<n ; i++){
+            System.out.print(arr[i] + " ");
+            System.out.println();
+        }
+    }
 }
