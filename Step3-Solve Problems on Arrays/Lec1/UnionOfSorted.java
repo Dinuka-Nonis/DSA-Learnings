@@ -1,3 +1,9 @@
+// Program to find the union of two sorted arrays (arr1 and arr2) without duplicates by merging them in sorted order using two pointers.
+// It uses two pointers (i for arr1, j for arr2) to compare elements one by one:
+// 1. Add the smaller element to the Union list (if it's not a duplicate).
+// 2. If both elements are equal, add it once and move both pointers forward.
+// 3. After one array ends, add the remaining elements of the other array (avoiding duplicates).
+// Finally, return the Union list containing all unique elements in sorted order.
 import java.util.ArrayList;
 
 public class UnionOfSorted {
