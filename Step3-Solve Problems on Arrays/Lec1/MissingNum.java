@@ -9,4 +9,10 @@ public class MissingNum {
         int missing = expectedsum - actualSum;
         return missing;
     }
+    public static void main(String[] args) {
+        int[] arr = {1,2,3,4};
+        int n = 5;
+
+        System.out.println("Missing value: "+ FindMissing(arr, n));
+    }
 }
