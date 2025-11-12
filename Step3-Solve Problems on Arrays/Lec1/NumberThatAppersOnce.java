@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class NumberThatAppersOnce {
 
     // Approach Explanation:
@@ -16,11 +19,32 @@ public class NumberThatAppersOnce {
         return ans ; // returning the final value
     }
 
+    static int hashMap(int arr[], int n){
+    Map<Integer, Integer> map = new HashMap<>();
+
+    // Step 1: Count frequencies
+    for(int i = 0 ; i < n ; i++){
+        map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
+    }
+
+    // Step 2: Find the number with frequency 1
+    for(Map.Entry<Integer, Integer> entry : map.entrySet()){
+        if(entry.getValue() == 1){
+            return entry.getKey();
+        }
+    }
+
+    // fallback if no unique element is found
+    return -1;
+}
+
+
     public static void main(String[] args) {
         int arr [] = {1,2,3,1,2,4,3};
         int n = arr.length;
 
         System.out.println(XORfunc(arr, n));
+        System.out.println(hashMap(arr, n));
     }
     
 }
