@@ -7,5 +7,12 @@ public class NumberThatAppersOnce {
         }
         return ans ; // returning the final value
     }
+
+    public static void main(String[] args) {
+        int arr [] = {1,2,3,1,2,4,3};
+        int n = arr.length;
+
+        System.out.println(XORfunc(arr, n));
+    }
     
 }
