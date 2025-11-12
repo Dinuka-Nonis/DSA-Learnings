@@ -20,6 +20,17 @@ public class NumberThatAppersOnce {
     }
 
     static int hashMap(int arr[], int n){
+        // Approach Explanation using HashMap:
+// 1. We use a HashMap to count the frequency of each element in the array.
+//    - Key: the element itself
+//    - Value: how many times it appears
+// 2. First, we loop through the array and update the map:
+//       - If the element is already in the map, increment its count.
+//       - If it is not, add it with count 1 (using getOrDefault helps with this).
+// 3. After building the frequency map, we loop through the map entries.
+// 4. The element whose frequency is 1 is the unique element, so we return it.
+// 5. If no element appears only once (edge case), return -1.
+
     Map<Integer, Integer> map = new HashMap<>();
 
     // Step 1: Count frequencies
