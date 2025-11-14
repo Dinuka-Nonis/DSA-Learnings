@@ -27,5 +27,12 @@ public class LongestSubWithNeg {
         }
         return maxLen;
     }
+    public static void main(String[] args) {
+        int[] a = { -1, 1, 1};
+        int k = 1;
+        int n = a.length;
+        int len = subarrayWithNegative(a, n, k);
+        System.out.println("The length of the longest subarray is: " + len);
+    }
     
 }
