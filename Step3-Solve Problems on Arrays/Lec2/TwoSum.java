@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 public class TwoSum {
-    static boolean doesTwoSumExist(int[] arr, int n, int k) {
+    static int[] doesTwoSumExist(int[] arr, int n, int k) {
         HashMap <Integer , Integer > map = new HashMap<>();
 
         for(int i = 0 ; i<n ; i++) {
@@ -9,10 +9,10 @@ public class TwoSum {
             int needed = k-current;
 
         if (map.containsKey(needed)){
-            return true; // pair found
+            return new int[] {map.get(needed), i};
         }
         map.put(current, i);
-    }
-    return false;
+        }
+      return new int[] { -1, -1 }; // No pair found
     }
 }
