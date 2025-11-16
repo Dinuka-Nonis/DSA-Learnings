@@ -22,4 +22,12 @@ public class Sort012 {
         }
         return arr;
     }
+    public static void main(String[] args) {
+        int[] arr = {0,1,2,0,2,2,1,0};
+        int n = arr. length;
+
+        int[] result = Sort(arr, n);
+        System.out.println("Sorted Array:");
+        for(int num : result){System.out.print(num + " ");}
+    }
 }
