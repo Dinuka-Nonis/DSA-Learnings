@@ -38,5 +38,11 @@ public class Majority {
         System.out.println(majority(arr, n));
 
         System.out.println(MooreVoting(arr, n));
+        int[] arr1 = {5, 5, 5, 2, 5, 3, 5};
+System.out.println(MooreVoting(arr1, arr1.length)); // Expected: 5
+
+int[] arr2 = {1, 2, 3, 4, 5, 5, 5, 5, 5};
+System.out.println(MooreVoting(arr2, arr2.length)); // Expected: 5
+
     }
 }
