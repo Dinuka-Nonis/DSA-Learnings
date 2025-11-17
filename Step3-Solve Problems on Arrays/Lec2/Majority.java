@@ -46,3 +46,15 @@ System.out.println(MooreVoting(arr2, arr2.length)); // Expected: 5
 
     }
 }
+
+/*
+Moore's Voting Algorithm:
+This method finds the majority element in O(N) time and O(1) space.
+We maintain a candidate (`element`) and a counter (`count`).
+Whenever count becomes 0, we choose the current element as the new candidate.
+If the next element is the same as the candidate, we increase count;
+otherwise, we decrease count.
+Because the majority element appears more than N/2 times, it will
+survive all cancellations and remain as the final candidate.
+*/
+
