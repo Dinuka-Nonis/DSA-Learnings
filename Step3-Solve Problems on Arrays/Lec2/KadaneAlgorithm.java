@@ -37,3 +37,18 @@ public class KadaneAlgorithm {
         kadane(arr, n);
     }
 }
+/* 
+   Problem:
+   Given an integer array, find the contiguous subarray with the maximum sum 
+   and also print that subarray.
+
+   Approach (Kadane’s Algorithm):
+   - Traverse the array while maintaining:
+        currentSum → sum of current subarray
+        maxSum → best subarray sum found so far
+   - Add each element to currentSum.
+   - If currentSum exceeds maxSum → update maxSum and store subarray indexes.
+   - If currentSum becomes negative → reset it to 0 and start a new subarray.
+   - This works because a negative running sum cannot help in forming a max-sum subarray.
+   - Time Complexity: O(n), Space: O(1)
+*/
