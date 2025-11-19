@@ -16,7 +16,12 @@ public class KadaneExtented {
             if (sum < 0) {
                 sum = 0;
                 tempStart = i+1;
-            }
+            }   
         }
+            System.out.println("Maximum Sum: " + maxSum);
+            System.out.print("subarray: ");
+            for(int j = start; j <= end ; j++){
+                System.out.print(arr[j]+ " ");
+    }
     }
 }
