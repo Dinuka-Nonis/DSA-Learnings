@@ -24,4 +24,20 @@ public class KadaneExtented {
                 System.out.print(arr[j]+ " ");
     }
     }
+    
+    public static void main(String[] args) {
+
+        int[] arr1 = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+
+        System.out.println("Test Case 1:");
+        kadane(arr1);
+
+        int[] arr2 = {1};
+        System.out.println("\nTest Case 2:");
+        kadane(arr2);
+
+        int[] arr3 = {-1, -4, -5};
+        System.out.println("\nTest Case 3 (all negatives):");
+        kadane(arr3);
+    }
 }
