@@ -41,3 +41,37 @@ public class KadaneExtented {
         kadane(arr3);
     }
 }
+
+/*
+ Kadane’s Algorithm with Start and End Indices
+
+ This method finds:
+ 1. The maximum subarray sum
+ 2. The exact subarray (start index to end index) that produces this sum
+
+ How it works:
+ - We keep a running sum called 'sum'. 
+ - If 'sum' ever becomes negative, we reset it to 0 because a negative sum
+   cannot help in creating a larger total later.
+ - Every time we reset the sum, we store the next index as a possible starting
+   point of a new subarray (tempStart).
+
+ Tracking the subarray:
+ - Whenever the running sum becomes greater than the best sum we have seen 
+   (maxSum), we update maxSum and record:
+        start = tempStart   // starting index of the current best subarray
+        end = i             // ending index is the current position
+ - This way, we always know exactly which part of the array gave the maximum sum.
+
+ Example:
+ For [-2, 1, -3, 4, -1, 2, 1],
+ The algorithm identifies 4, -1, 2, 1 as the subarray with max sum = 6.
+
+ Variables:
+ - sum: running total of the current subarray
+ - maxSum: best sum found so far
+ - tempStart: temporary starting index (used when resetting)
+ - start, end: the actual start and end indices of the best subarray
+
+ Time Complexity: O(n), because we only scan the array once.
+*/
