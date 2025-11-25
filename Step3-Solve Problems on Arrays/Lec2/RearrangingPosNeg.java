@@ -41,4 +41,14 @@ public class RearrangingPosNeg {
 
         return ans;
     }
+    public static void main(String[] args) {
+        int[] A = {1, 2, -4, -5};
+
+        RearrangingPosNeg obj = new RearrangingPosNeg();
+        int[] result = obj.rearrangeBySign(A);
+
+        for (int num : result) {
+            System.out.print(num + " ");
+        }
+    }
 }
