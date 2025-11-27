@@ -62,4 +62,21 @@ public class nextPermutation {
         arr[i] = arr[j];
         arr[j] = temp;
     }
+    public static void main(String[] args) {
+        // Input array
+        int[] nums = {1, 2, 3};
+
+        // Create object
+        nextPermutation sol = new nextPermutation();
+
+        // Call function
+        sol.nextPermutation(nums);
+
+        // Print result
+        for (int num : nums) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
+
 }
