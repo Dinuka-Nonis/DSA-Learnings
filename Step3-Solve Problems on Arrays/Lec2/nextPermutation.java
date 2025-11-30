@@ -64,7 +64,7 @@ public class nextPermutation {
     }
     public static void main(String[] args) {
         // Input array
-        int[] nums = {1, 2, 3};
+        int[] nums = {1, 2, 3}; 
 
         // Create object
         nextPermutation sol = new nextPermutation();
