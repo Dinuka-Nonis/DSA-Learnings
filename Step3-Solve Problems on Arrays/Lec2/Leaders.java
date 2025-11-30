@@ -24,4 +24,16 @@ public class Leaders {
         return ans;
     }
 
+    public static void main(String[] args) {
+        Leaders obj = new Leaders();
+
+        int[] arr = {4, 7, 1, 0}; // sample input
+
+        ArrayList<Integer> result = obj.leaders(arr);
+
+        System.out.println("Leaders in the array:");
+        for(int x : result) {
+            System.out.print(x + " ");
+        }
+    }
 }
