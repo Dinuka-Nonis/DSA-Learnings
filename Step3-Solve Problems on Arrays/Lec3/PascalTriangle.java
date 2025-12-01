@@ -1,4 +1,6 @@
+// PascalTriangle.java
 public class PascalTriangle {
+    // Function to compute element at (r, c)
     public long findPascalElement(int r, int c) {
         // Element is C(r-1, c-1)
         int n = r - 1;
@@ -14,4 +16,12 @@ public class PascalTriangle {
 
         return result;
     }
+    
+    public static void main(String[] args) {
+        PascalTriangle sol = new PascalTriangle();
+        int r = 5, c = 3;
+        System.out.println("Element at (" + r + "," + c + ") = " + sol.findPascalElement(r, c));
+    }
 }
+    
+
