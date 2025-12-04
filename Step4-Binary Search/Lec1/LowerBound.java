@@ -18,4 +18,11 @@ public class LowerBound {
         return ans;
         
     }
+    public static void main(String[] args) {
+        int[] arr = {3, 5, 8, 15, 19};
+        int x = 9;
+
+        int result = lowerBound(arr, x);
+        System.out.println("Lower Bound of " + x + " is index: " + result);
+    }
 }
