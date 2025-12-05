@@ -16,4 +16,11 @@ public class UpperBound {
         }
         return ans;
     }
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 2, 3};
+        int x = 2;
+
+        int result = UpperBound(arr, x);
+        System.out.println("Upper Bound of " + x + " is index: " + result);
+    }
 }
