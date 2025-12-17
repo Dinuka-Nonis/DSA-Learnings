@@ -15,5 +15,29 @@ public class FloorAndCeiling {
      * - If arr[mid] > x → possible ceiling, search left
      * Time Complexity: O(log n)
      */
+
+    public static void findFloorCeil(int[] arr, int x){
+        int low = 0, high = arr.length -1;
+        int floor = -1, ceil = -1;
+
+        while(low<= high) {
+            int mid = low + (high -low)/2;
+
+            if (arr[mid] ==x){
+                floor = arr[mid];
+                ceil = arr[mid];
+                break;
+            }
+            else if (arr[mid] <x){
+                floor = arr[mid];
+                low = mid+1;
+            }
+            else {
+                ceil= arr[mid];
+                high = mid-1;
+            }
+        }
+        System.out.println(floor+ " " + ceil);
+    }
     
 }
