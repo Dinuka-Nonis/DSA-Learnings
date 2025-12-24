@@ -1,3 +1,10 @@
+// This program counts how many times a given element appears in a sorted array
+// using binary search. It finds the first occurrence by moving left when the
+// element is found, and the last occurrence by moving right. The total count is
+// calculated as (lastIndex - firstIndex + 1), making the solution efficient
+// with O(log n) time complexity.
+
+
 public class CountOccurence {
     public static int firstOccurrence(int[] arr, int n, int k) {
         int low = 0, high = n - 1;
