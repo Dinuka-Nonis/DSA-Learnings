@@ -1,5 +1,4 @@
 public class RotatedSorted {
-    public class SearchRotatedArray {
 
     public static int search(int[] nums, int k) {
         int low = 0, high = nums.length - 1;
@@ -30,5 +29,12 @@ public class RotatedSorted {
         }
         return -1;
     }
-}
+
+public static void main(String[] args) {
+        int[] nums1 = {4, 5, 6, 7, 0, 1, 2};
+        System.out.println(search(nums1, 0)); // Output: 4
+
+        int[] nums2 = {4, 5, 6, 7, 0, 1, 2};
+        System.out.println(search(nums2, 3)); // Output: -1
+    }
 }
