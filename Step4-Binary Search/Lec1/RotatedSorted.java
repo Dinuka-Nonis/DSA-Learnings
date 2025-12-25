@@ -1,3 +1,7 @@
+// Modified binary search: at each step, one half of the rotated sorted array is guaranteed to be sorted; 
+// check which half is sorted, decide if the target lies within that sorted range, and discard the other half; 
+// repeat until the target is found or the search space is exhausted (O(log n)).
+
 public class RotatedSorted {
 
     public static int search(int[] nums, int k) {
