@@ -1,3 +1,24 @@
+/*
+ This program searches for a target element in a rotated sorted array
+ that may contain duplicate values.
+
+ Approach:
+ - Uses a modified Binary Search to achieve efficient searching.
+ - At each step, we calculate the middle index.
+ - If the middle element matches the target, we return true.
+ - If the values at low, mid, and high are equal, we cannot determine
+   which half is sorted, so we safely shrink the search space by
+   incrementing low and decrementing high.
+ - Otherwise, we check which half of the array is sorted:
+     • If the left half is sorted, we check whether the target lies in it.
+     • If the right half is sorted, we check whether the target lies in it.
+ - Based on this check, we discard the unnecessary half and continue searching.
+
+ The loop continues until the target is found or the search space becomes empty.
+ If the target is not found, the function returns false.
+
+*/
+
 public class RotatedSort2 {
     public boolean searchInRotatedSortedArrayII(int[] arr, int k) {
         int low = 0, high = arr.length - 1;
