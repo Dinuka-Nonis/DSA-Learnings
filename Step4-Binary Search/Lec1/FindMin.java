@@ -1,32 +1,39 @@
-class findMin {
-    // Function to find the minimum element using binary search
+class FindMin {
+
+    // Function to find the minimum element in a rotated sorted array
     public int findMin(int[] nums) {
 
-        // Initialize low and high pointers
+        // Edge case: empty array
+        if (nums == null || nums.length == 0) {
+            throw new IllegalArgumentException("Array is empty");
+        }
+
         int low = 0, high = nums.length - 1;
 
         // Binary search loop
         while (low < high) {
 
-            // Calculate mid index
             int mid = low + (high - low) / 2;
 
-            // Check which half to discard
+            // Decide which half contains the minimum
             if (nums[mid] > nums[high]) {
-
-                // Minimum lies in right half
-                low = mid + 1;
-
+                low = mid + 1;   // Minimum is in right half
             } else {
-
-                // Minimum lies in left half (including mid)
-                high = mid;
+                high = mid;      // Minimum is in left half (including mid)
             }
         }
 
-        // Return the minimum element
+        // low == high → index of minimum element
         return nums[low];
     }
+
+    public static void main(String[] args) {
+
+        int[] nums = {4, 5, 6, 7, 0, 1, 2};
+
+        FindMin sol = new FindMin();
+        int result = sol.findMin(nums);
+
+        System.out.println("Minimum element is " + result);
+    }
 }
-
-
