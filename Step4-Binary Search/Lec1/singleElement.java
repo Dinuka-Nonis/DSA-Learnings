@@ -43,5 +43,17 @@ public class singleElement {
         // Dummy return (not reachable if input is valid)
         return -1;
     }
-}
+    public static void main(String[] args) {
+        // Input array with all elements appearing twice except one
+        int[] arr = {1, 1, 2, 2, 3, 3, 4, 5, 5, 6, 6};
 
+        // Create an object of Solution class
+        singleElement obj = new singleElement();
+
+        // Call the function and store the result
+        int ans = obj.singleNonDuplicate(arr);
+
+        // Print the result
+        System.out.println("The single element is: " + ans);
+    }
+}
