@@ -1,3 +1,10 @@
+/*
+ Given a sorted array where every element appears exactly twice except one element
+ that appears only once, the task is to find and return that single element.
+ All duplicate elements are placed next to each other, and there is only one
+ such unique element in the entire array.
+*/
+
 public class singleElement {
      
      // Function to find the single non-duplicate element using binary search
