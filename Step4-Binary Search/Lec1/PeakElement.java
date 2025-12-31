@@ -1,3 +1,14 @@
+/*
+This program finds a peak element in an integer array using binary search.
+A peak element is an element that is greater than its neighboring elements.
+Instead of checking every element, the algorithm compares the middle element
+with its next element to determine the direction of the slope. If the middle
+element is greater than the next one, a peak must exist on the left side
+(including mid). Otherwise, the peak must exist on the right side. The search
+space is reduced accordingly until only one index remains. That index is
+guaranteed to be a peak. The algorithm runs in O(log n) time and uses O(1)
+extra space.
+*/
 class Solution {
     // Function to find a peak element using binary search
     public int findPeakElement(int[] nums) {
