@@ -1,3 +1,6 @@
+// Problem: Given a positive integer n, find the floor value of its square root (largest integer x such that x*x ≤ n) using binary search by checking mid*mid and narrowing the search space.
+
+//We use binary search between 1 and n to find the largest number whose square is less than or equal to n. If mid × mid is valid, we store it and move right; otherwise, we move left. The stored value is the floor of √n.
 
 public class FindSqrt {
     public int floorsqrt(int n) {
