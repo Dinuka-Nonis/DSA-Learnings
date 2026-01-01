@@ -23,4 +23,12 @@ public class FindSqrt {
         }
         return ans;
     }
+    public static void main(String[] args) {
+        int n = 10;   // change this value to test
+
+        FindSqrt obj = new FindSqrt();
+        int result = obj.floorsqrt(n);
+
+        System.out.println("Floor square root of " + n + " is: " + result);
+    }
 }
