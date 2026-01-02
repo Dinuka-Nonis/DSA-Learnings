@@ -17,4 +17,10 @@ public class NthRoot {
         }
         return -1;
     }
+    public static void main(String[] args) {
+        NthRoot obj =new NthRoot();
+        int result = obj.nthRoot(3, 27);
+        System.out.println(result);
+
+    }
 }
