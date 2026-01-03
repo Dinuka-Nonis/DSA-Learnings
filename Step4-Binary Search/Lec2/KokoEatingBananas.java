@@ -33,4 +33,11 @@ public class KokoEatingBananas {
         }
         return ans;
     }
+     public static void main(String[] args) {
+        int[] piles = {3, 6, 7, 11};
+        int h = 8;
+
+        KokoEatingBananas obj = new KokoEatingBananas();
+        System.out.println(obj.minEatingSpeed(piles, h));
+    }
 }
