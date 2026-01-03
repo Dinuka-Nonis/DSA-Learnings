@@ -1,3 +1,8 @@
+// Approach: We use Binary Search on the answer (eating speed k). The minimum speed is 1 and the maximum is the largest pile.
+// For a chosen speed k, we calculate how many hours Koko needs to eat all piles (using ceiling division).
+// If total hours <= h, the speed is sufficient, so we try a smaller k; otherwise, we increase k.
+// This works because higher speeds always reduce the required time (monotonic behavior).
+
 import java.util.Arrays;
 
 public class KokoEatingBananas {
