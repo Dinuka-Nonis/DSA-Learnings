@@ -23,4 +23,9 @@ public class Reverse {
         }
         return result.toString();
     }
+    public static void main(String[] args) {
+        Reverse obj = new Reverse();
+        String s = " Adjusting the seat? thats your problem the whole time. The seat height. now you have it  ";
+        System.out.println(obj.reverseWords(s));
+    }
 }
